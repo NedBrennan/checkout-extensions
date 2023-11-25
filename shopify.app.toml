@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "checkout-extension"
+client_id = "fd059bba52da6907da4542057f9b3852"
+application_url = "https://taxation-consult-disclaimer-enhancing.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://taxation-consult-disclaimer-enhancing.trycloudflare.com/auth/callback",
+  "https://taxation-consult-disclaimer-enhancing.trycloudflare.com/auth/shopify/callback",
+  "https://taxation-consult-disclaimer-enhancing.trycloudflare.com/api/auth/callback",
+  "https://taxation-consult-disclaimer-enhancing.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quixotes-checkout.myshopify.com"
